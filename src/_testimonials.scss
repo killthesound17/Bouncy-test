@@ -73,6 +73,19 @@ text-transform: uppercase;
   padding-bottom: 50px;
 }
 .slick-dots li.slick-active button:before {
+  position: absolute;
+    top: 0;
+    left: 0;
+    content: "o";
+    width: 20px;
+    height: 20px;
+    font-family: "slick";
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    color: black;
+    opacity: 0.25;
+    -webkit-font-smoothing: antialiased;
 
 }
 
