@@ -84,6 +84,7 @@ function initMap() {
     };
 
     var map = new google.maps.Map(document.getElementById('map-main'), {
+        scrollwheel: false,
         zoom: 17,
         center: bouncyPos,
         mapTypeId: 'roadmap',

@@ -551,6 +551,25 @@
     margin-top: 25px;
     margin-bottom: 25px; }
 
+.social-media {
+  width: 20%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+  .social-media__link {
+    text-decoration: none; }
+  .social-media__icobgr--fb {
+    color: #3b5998; }
+  .social-media__icobgr--twit {
+    color: #26a6d1; }
+  .social-media__icobgr--linkin {
+    color: #0e76a8; }
+  .social-media__icobgr--insta {
+    color: #3f729b; }
+  .social-media__icobgr--vimeo {
+    color: #86c9ef; }
+
 #toTop {
   position: fixed;
   bottom: 50px;
