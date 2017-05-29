@@ -551,33 +551,6 @@
     margin-top: 25px;
     margin-bottom: 25px; }
 
-.social-media__link {
-  height: 24px;
-  width: 24px;
-  line-height: 24px;
-  display: inline-block;
-  margin: 0 6px;
-  text-align: center;
-  text-decoration: none;
-  border-radius: 50%;
-  color: white;
-  font-size: 14px;
-  font-size: 14px;
-  font-weight: 400px; }
-  .social-media__link--fb {
-    background-color: #3b5998; }
-  .social-media__link--twit {
-    background-color: #26a6d1;
-    padding-left: 2px; }
-  .social-media__link--linkin {
-    background-color: #0e76a8;
-    padding-left: 2px; }
-  .social-media__link--insta {
-    background-color: #3f729b;
-    padding-left: 1px; }
-  .social-media__link--vimeo {
-    background-color: #86c9ef; }
-
 #toTop {
   position: fixed;
   bottom: 50px;

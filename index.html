@@ -1,158 +1,194 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  	<link rel="icon" href="favicon.ico"/>
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400|Source+Sans+Pro:300,300i,400" rel="stylesheet">
-  <link rel="stylesheet" href="styles/fonts/slick.ttf">
-  <link rel="stylesheet" href="styles/fonts/slick.woff">
-  <link rel="stylesheet" href="styles/normalize.css">
-  <link rel="stylesheet" href="styles/animate.css">
-  <link rel="stylesheet" href="styles/main.css">
 
-  <script src="https://use.fontawesome.com/e059081491.js"></script>
-  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-  <title>Bouncy</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="favicon.ico" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400|Source+Sans+Pro:300,300i,400" rel="stylesheet">
+    <link rel="stylesheet" href="styles/fonts/slick.ttf">
+    <link rel="stylesheet" href="styles/fonts/slick.woff">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/animate.css">
+    <link rel="stylesheet" href="styles/main.css">
+
+    <script src="https://use.fontawesome.com/e059081491.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <title>Bouncy</title>
 </head>
+
 <body>
-<header class="header">
-  <div class="container header-upper">
-    <div class="logo-block"><a href="" class="logo-block__mainlink"><svg xmlns="http://www.w3.org/2000/svg" width="113" height="19" viewBox="0 0 113 19"><path fill="#fff" d="M5.82 14.95V11.7h3.3c.85 0 1.63.73 1.63 1.63 0 .9-.73 1.62-1.63 1.62zm0-7.37V4.33H8.2a1.62 1.62 0 1 1 0 3.25zM10.15 19c2.97 0 5.5-2.52 5.5-5.5 0-1.7-.85-3.27-2.13-4.3a5.5 5.5 0 0 0 1.2-3.37c0-3-2.55-5.58-5.55-5.58H.9V19zm8.07-9.35a9.35 9.35 0 1 0 18.72 0 9.4 9.4 0 0 0-9.37-9.4 9.38 9.38 0 0 0-9.35 9.4zm13.83-.02c0 2.45-2 4.47-4.48 4.47a4.48 4.48 0 0 1 0-8.95c2.48 0 4.48 2 4.48 4.48zM44.8.25h-4.95V11.6c0 4.13 3.27 7.4 7.4 7.4 4.07 0 7.4-3.27 7.4-7.4V.25H49.7v11.28a2.45 2.45 0 0 1-4.9 0zM74.2 19V.25h-4.93V9.1L60.4.25h-2V19h4.92v-8.87L72.17 19zM92.24 2.98a9.38 9.38 0 1 0 .05 13.25l-3.5-3.45a4.3 4.3 0 0 1-3.15 1.25 4.25 4.25 0 0 1-4.4-4.4c0-2.55 1.85-4.4 4.4-4.4 1.27 0 2.37.45 3.15 1.22zM112.72.25h-5.67l-3.63 6.25-3.6-6.25h-5.67L101 12.1V19h4.87v-6.9z"/></svg></a></div>
-    <nav class="nav-block">
-      <ul class="nav-block__list">
-        <li class="nav-block__listitem"><a href="" class="nav-block__li-link nav-block__li-link--active">Hello</a></li>
-        <li class="nav-block__listitem"><a href="#portfolio-id" class="nav-block__li-link">Portfolio</a></li>
-        <li class="nav-block__listitem"><a href="#team-id" class="nav-block__li-link">Team</a></li>
-        <li class="nav-block__listitem"><a href="#contact-id" class="nav-block__li-link">Contact</a></li>
-      </ul>
-    </nav>
-  </div>
-  <div class="container header-lower">
-    <h1 class="header-lower__heading">We Are Code Cafe</h1>
-    <p class="header-lower__text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum</p>
-  </div>
-  <a href="#portfolio-id" class="header__greenlink"><svg xmlns="http://www.w3.org/2000/svg"
+    <header class="header">
+        <div class="container header-upper header-upper--fixed">
+            <div class="logo-block"><a href="" class="logo-block__mainlink"><svg xmlns="http://www.w3.org/2000/svg" width="113" height="19" viewBox="0 0 113 19"><path fill="#fff" d="M5.82 14.95V11.7h3.3c.85 0 1.63.73 1.63 1.63 0 .9-.73 1.62-1.63 1.62zm0-7.37V4.33H8.2a1.62 1.62 0 1 1 0 3.25zM10.15 19c2.97 0 5.5-2.52 5.5-5.5 0-1.7-.85-3.27-2.13-4.3a5.5 5.5 0 0 0 1.2-3.37c0-3-2.55-5.58-5.55-5.58H.9V19zm8.07-9.35a9.35 9.35 0 1 0 18.72 0 9.4 9.4 0 0 0-9.37-9.4 9.38 9.38 0 0 0-9.35 9.4zm13.83-.02c0 2.45-2 4.47-4.48 4.47a4.48 4.48 0 0 1 0-8.95c2.48 0 4.48 2 4.48 4.48zM44.8.25h-4.95V11.6c0 4.13 3.27 7.4 7.4 7.4 4.07 0 7.4-3.27 7.4-7.4V.25H49.7v11.28a2.45 2.45 0 0 1-4.9 0zM74.2 19V.25h-4.93V9.1L60.4.25h-2V19h4.92v-8.87L72.17 19zM92.24 2.98a9.38 9.38 0 1 0 .05 13.25l-3.5-3.45a4.3 4.3 0 0 1-3.15 1.25 4.25 4.25 0 0 1-4.4-4.4c0-2.55 1.85-4.4 4.4-4.4 1.27 0 2.37.45 3.15 1.22zM112.72.25h-5.67l-3.63 6.25-3.6-6.25h-5.67L101 12.1V19h4.87v-6.9z"/></svg></a></div>
+            <nav class="nav-block">
+                <ul class="nav-block__list">
+                    <li class="nav-block__listitem"><a href="" class="nav-block__li-link nav-block__li-link--active">Hello</a></li>
+                    <li class="nav-block__listitem"><a href="#portfolio-id" class="nav-block__li-link">Portfolio</a></li>
+                    <li class="nav-block__listitem"><a href="#team-id" class="nav-block__li-link">Team</a></li>
+                    <li class="nav-block__listitem"><a href="#contact-id" class="nav-block__li-link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="container header-lower">
+            <h1 class="header-lower__heading">We Are Code Cafe</h1>
+            <p class="header-lower__text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum</p>
+        </div>
+        <a href="#portfolio-id" class="header__greenlink"><svg xmlns="http://www.w3.org/2000/svg"
 xmlns:xlink="http://www.w3.org/1999/xlink"
 width="36px" height="36px" viewBox="0 0 36 36">
 <circle cx="18.00" cy="18.00" r="18.00" fill="rgb(25,189,153)"/><image x="12" y="15" width="12" height="7" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAHCAQAAACWu2SvAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAA6SURBVAjXY/gf+l/wPwMaTPvPwPB/5v8zaFIz/5/5LwhnoAr/Z0DhILNQ1SHpRTb5HbKRyJaWIzsCADvrYxX3Rg0eAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDE3LTA1LTIzVDE2OjAyOjM4KzAwOjAwWKFvEgAAACV0RVh0ZGF0ZTptb2RpZnkAMjAxNy0wNS0yM1QxNjowMjozOCswMDowMCn8164AAAAASUVORK5CYII=" /></svg></a>
-</header>
-<main>
-  <div class="portfolio-bgr">
-  <section class="container portfolio">
-    <h2 id="portfolio-id" class="portfolio__heading">THE PORTFOLIO</h2>
-    <p class="portfolio__description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
-    <div class="portfolio-buttons filter-button-group">
-      <button class="portfolio-buttons__item portfolio-buttons__item--active" data-filter="*" data-filter=".">All works</button>
-      <button class="portfolio-buttons__item" data-filter=".print">Print</button>
-      <button class="portfolio-buttons__item" data-filter=".branding">Branding</button>
-      <button class="portfolio-buttons__item" data-filter=".web">Web</button>
-      <button class="portfolio-buttons__item" data-filter=".htmll">HTML</button>
-    </div>
-    <div class="grid">
-      <img src="img/grid1.png" alt="" class="grid__grid-item print">
-      <img src="img/grid2.png" alt="" class="grid__grid-item web">
-      <img src="img/grid3.png" alt="" class="grid__grid-item web">
-      <img src="img/grid4.png" alt="" class="grid__grid-item print">
-      <img src="img/grid5.png" alt="" class="grid__grid-item branding">
-      <img src="img/grid6.png" alt="" class="grid__grid-item web">
-      <img src="img/grid7.png" alt="" class="grid__grid-item branding">
-      <img src="img/grid8.png" alt="" class="grid__grid-item print">
-      <img src="img/grid9.png" alt="" class="grid__grid-item branding">
-      <img src="img/grid10.png" alt="" class="grid__grid-item htmll">
-      <img src="img/grid11.png" alt="" class="grid__grid-item print">
-      <img src="img/grid12.png" alt="" class="grid__grid-item htmll">
-    </div>
-  </section>
-  </div>
-  <section class="container team">
-    <h2 id="team-id" class="team__heading">THE TEAM</h2>
-    <p class="team__text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
-    <div class="slider">
-      <div class="slide">
-        <div class="slide__photo"><img src="img/team-img1.png" alt="" class="slide-img"></div>
-        <div class="slide__info">
-          <h2 class="slide__heading">Abdullah Noman</h2>
-          <span class="slide__heading2">Creative Director, Code Cafe</span>
-          <p class="slide__text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium. At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium. At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium. At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium. At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium. </p>
+    </header>
+    <main>
+        <div class="portfolio-bgr">
+            <section class="container portfolio">
+                <h2 id="portfolio-id" class="portfolio__heading">THE PORTFOLIO</h2>
+                <p class="portfolio__description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+                <div class="portfolio-buttons filter-button-group">
+                    <button class="portfolio-buttons__item portfolio-buttons__item--active" data-filter="*" data-filter=".">All works</button>
+                    <button class="portfolio-buttons__item" data-filter=".print">Print</button>
+                    <button class="portfolio-buttons__item" data-filter=".branding">Branding</button>
+                    <button class="portfolio-buttons__item" data-filter=".web">Web</button>
+                    <button class="portfolio-buttons__item" data-filter=".htmll">HTML</button>
+                </div>
+                <div class="grid">
+                    <img src="img/grid1.png" alt="" class="grid__grid-item print">
+                    <img src="img/grid2.png" alt="" class="grid__grid-item web">
+                    <img src="img/grid3.png" alt="" class="grid__grid-item web">
+                    <img src="img/grid4.png" alt="" class="grid__grid-item print">
+                    <img src="img/grid5.png" alt="" class="grid__grid-item branding">
+                    <img src="img/grid6.png" alt="" class="grid__grid-item web">
+                    <img src="img/grid7.png" alt="" class="grid__grid-item branding">
+                    <img src="img/grid8.png" alt="" class="grid__grid-item print">
+                    <img src="img/grid9.png" alt="" class="grid__grid-item branding">
+                    <img src="img/grid10.png" alt="" class="grid__grid-item htmll">
+                    <img src="img/grid11.png" alt="" class="grid__grid-item print">
+                    <img src="img/grid12.png" alt="" class="grid__grid-item htmll">
+                </div>
+            </section>
         </div>
-      </div>
-      <div class="slide">
-        <div class="slide__photo"><img src="img/team-img1.png" alt="" class="slide-img"></div>
-        <div class="slide__info">
-          <h2 class="slide__heading">Abdullah Noman</h2>
-          <span class="slide__heading2">Creative Director, Code Cafe</span>
-          <p class="slide__text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium. At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium. At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium. At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium. At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium. </p>
+        <section class="container team">
+            <h2 id="team-id" class="team__heading">THE TEAM</h2>
+            <p class="team__text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+            <div class="slider">
+                <div class="slide">
+                    <div class="slide__photo"><img src="img/team-img1.png" alt="" class="slide-img"></div>
+                    <div class="slide__info">
+                        <h2 class="slide__heading">Abdullah Noman</h2>
+                        <span class="slide__heading2">Creative Director, Code Cafe</span>
+                        <p class="slide__text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium. At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium. At vero eos et accusamus et iusto odio dignissimos ducimus
+                            qui blanditiis praesentium. At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium. At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium. </p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="slide__photo"><img src="img/team-img1.png" alt="" class="slide-img"></div>
+                    <div class="slide__info">
+                        <h2 class="slide__heading">Abdullah Noman</h2>
+                        <span class="slide__heading2">Creative Director, Code Cafe</span>
+                        <p class="slide__text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium. At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium. At vero eos et accusamus et iusto odio dignissimos ducimus
+                            qui blanditiis praesentium. At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium. At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium. </p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="slide__photo"><img src="img/team-img1.png" alt="" class="slide-img"></div>
+                    <div class="slide__info">
+                        <h2 class="slide__heading">Abdullah Noman</h2>
+                        <span class="slide__heading2">Creative Director, Code Cafe</span>
+                        <p class="slide__text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium. At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium. At vero eos et accusamus et iusto odio dignissimos ducimus
+                            qui blanditiis praesentium. At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium. At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium. </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contact-us">
+            <h2 class="contact-us__heading">Already Loved Us? Let’s talk!</h2>
+            <a href="" class="contact-us__button">Contact Us</a>
+        </section>
+        <section class="testimonials">
+            <h2 class="testimonials__heading">Testimonials</h2>
+            <p class="testimonials__text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+            <div class="container test-slider">
+                <div class="test-slide">
+                    <img src="img/prof-pic1.png" alt="" class="test-slide__pic">
+                    <div class="test-slide__info">
+                        <p class="test-slide__text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa
+                            qui officia deserunt mollitia.</p>
+                        <h2 class="test-slide__heading">PARTHO</h2>
+                        <span class="test-slide__heading2">FOUNDER, ARTWAYS BD</span>
+                    </div>
+                </div>
+                <div class="test-slide"><img src="img/prof-pic1.png" alt="" class="test-slide__pic">
+                    <div class="test-slide__info">
+                        <p class="test-slide__text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa
+                            qui officia deserunt mollitia.</p>
+                        <h2 class="test-slide__heading">PARTHO</h2>
+                        <span class="test-slide__heading2">FOUNDER, ARTWAYS BD</span>
+                    </div>
+                </div>
+                <div class="test-slide"><img src="img/prof-pic1.png" alt="" class="test-slide__pic">
+                    <div class="test-slide__info">
+                        <p class="test-slide__text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa
+                            qui officia deserunt mollitia.</p>
+                        <h2 class="test-slide__heading">PARTHO</h2>
+                        <span class="test-slide__heading2">FOUNDER, ARTWAYS BD</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contact-id" class="contact-map">
+            <h2 class="contact-map__heading">Contact Us</h2>
+            <p class="contact-map__text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+            <div id="map-main"></div>
+        </section>
+    </main>
+    <footer class="footer">
+        <svg xmlns="http://www.w3.org/2000/svg" width="113" height="19" viewBox="0 0 113 19"><path fill="#fff" d="M5.82 14.95V11.7h3.3c.85 0 1.63.73 1.63 1.63 0 .9-.73 1.62-1.63 1.62zm0-7.37V4.33H8.2a1.63 1.63 0 0 1 0 3.25zM10.15 19c2.97 0 5.5-2.52 5.5-5.5a5.6 5.6 0 0 0-2.13-4.3c.73-.92 1.2-2.1 1.2-3.37 0-3-2.55-5.58-5.55-5.58H.9V19zm8.07-9.35a9.35 9.35 0 1 0 18.72 0 9.4 9.4 0 0 0-9.37-9.4 9.38 9.38 0 0 0-9.35 9.4zm13.83-.02c0 2.45-2 4.47-4.48 4.47a4.48 4.48 0 0 1 0-8.95c2.48 0 4.48 2 4.48 4.48zM44.8.25h-4.95V11.6c0 4.13 3.27 7.4 7.4 7.4 4.07 0 7.4-3.27 7.4-7.4V.25H49.7v11.28a2.45 2.45 0 0 1-4.9 0zM74.2 19V.25h-4.93V9.1L60.4.25h-2V19h4.92v-8.87L72.17 19zM92.25 2.98a9.38 9.38 0 1 0 .05 13.25l-3.5-3.45a4.3 4.3 0 0 1-3.15 1.25 4.25 4.25 0 0 1-4.4-4.4c0-2.55 1.85-4.4 4.4-4.4a4.4 4.4 0 0 1 3.15 1.22zM112.72.25h-5.67l-3.63 6.25-3.6-6.25h-5.67L101 12.1V19h4.87v-6.9z"/><path fill="#323a45" d="M5.82 14.95V11.7h3.3c.85 0 1.63.73 1.63 1.63 0 .9-.73 1.62-1.63 1.62zm0-7.37V4.33H8.2a1.63 1.63 0 0 1 0 3.25zM10.15 19c2.97 0 5.5-2.52 5.5-5.5a5.6 5.6 0 0 0-2.13-4.3c.73-.92 1.2-2.1 1.2-3.37 0-3-2.55-5.58-5.55-5.58H.9V19zm8.07-9.35a9.35 9.35 0 1 0 18.72 0 9.4 9.4 0 0 0-9.37-9.4 9.38 9.38 0 0 0-9.35 9.4zm13.83-.02c0 2.45-2 4.47-4.48 4.47a4.48 4.48 0 0 1 0-8.95c2.48 0 4.48 2 4.48 4.48zM44.8.25h-4.95V11.6c0 4.13 3.27 7.4 7.4 7.4 4.07 0 7.4-3.27 7.4-7.4V.25H49.7v11.28a2.45 2.45 0 0 1-4.9 0zM74.2 19V.25h-4.93V9.1L60.4.25h-2V19h4.92v-8.87L72.17 19zM92.25 2.98a9.38 9.38 0 1 0 .05 13.25l-3.5-3.45a4.3 4.3 0 0 1-3.15 1.25 4.25 4.25 0 0 1-4.4-4.4c0-2.55 1.85-4.4 4.4-4.4a4.4 4.4 0 0 1 3.15 1.22zM112.72.25h-5.67l-3.63 6.25-3.6-6.25h-5.67L101 12.1V19h4.87v-6.9z"/></svg>
+        <br>
+        <span class="footer__copyright">Copyright 2015. All rights Reserved</span>
+        <div class="social-media">
+            <a href="" class="social-media__link social-media__link--fb">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="social-media__ico fa fa-facebook fa-stack-1x fa-inverse" aria-hidden="true"></i>
+                </span>
+            </a>
+            <a href="" class="social-media__link social-media__link--twit">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+              <i class="social-media__ico fa fa-twitter fa-stack-1x fa-inverse" aria-hidden="true"></i>
+              </span>
+            </a>
+            <a href="" class="social-media__link social-media__link--linkin">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+              <i class="social-media__ico fa fa-linkedin fa-stack-1x fa-inverse" aria-hidden="true"></i>
+              </span>
+            </a>
+            <a href="" class="social-media__link social-media__link--insta">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+              <i class="social-media__ico fa fa-instagram fa-stack-1x fa-inverse" aria-hidden="true"></i>
+              </span>
+            </a>
+            <a href="" class="social-media__link social-media__link--vimeo">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+              <i class="social-media__ico fa fa-vimeo fa-stack-1x fa-inverse" aria-hidden="true"></i>
+              </span>
+            </a>
         </div>
-      </div>
-      <div class="slide">
-        <div class="slide__photo"><img src="img/team-img1.png" alt="" class="slide-img"></div>
-        <div class="slide__info">
-          <h2 class="slide__heading">Abdullah Noman</h2>
-          <span class="slide__heading2">Creative Director, Code Cafe</span>
-          <p class="slide__text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium. At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium. At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium. At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium. At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium. </p>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="contact-us">
-    <h2 class="contact-us__heading">Already Loved Us? Let’s talk!</h2>
-    <a href="" class="contact-us__button">Contact Us</a>
-  </section>
-  <section class="testimonials">
-    <h2 class="testimonials__heading">Testimonials</h2>
-    <p class="testimonials__text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
-    <div class="container test-slider">
-      <div class="test-slide">
-        <img src="img/prof-pic1.png" alt="" class="test-slide__pic">
-        <div class="test-slide__info">
-          <p class="test-slide__text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia.</p>
-          <h2 class="test-slide__heading">PARTHO</h2>
-          <span class="test-slide__heading2">FOUNDER, ARTWAYS BD</span>
-        </div>
-      </div>
-      <div class="test-slide"><img src="img/prof-pic1.png" alt="" class="test-slide__pic">
-      <div class="test-slide__info">
-        <p class="test-slide__text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia.</p>
-        <h2 class="test-slide__heading">PARTHO</h2>
-        <span class="test-slide__heading2">FOUNDER, ARTWAYS BD</span>
-      </div></div>
-      <div class="test-slide"><img src="img/prof-pic1.png" alt="" class="test-slide__pic">
-      <div class="test-slide__info">
-        <p class="test-slide__text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia.</p>
-        <h2 class="test-slide__heading">PARTHO</h2>
-        <span class="test-slide__heading2">FOUNDER, ARTWAYS BD</span>
-      </div></div>
-    </div>
-  </section>
-  <section id="contact-id" class="contact-map">
-    <h2 class="contact-map__heading">Contact Us</h2>
-    <p class="contact-map__text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
-    <div id="map-main"></div>
-  </section>
-</main>
-<footer class="footer">
-  <svg xmlns="http://www.w3.org/2000/svg" width="113" height="19" viewBox="0 0 113 19"><path fill="#fff" d="M5.82 14.95V11.7h3.3c.85 0 1.63.73 1.63 1.63 0 .9-.73 1.62-1.63 1.62zm0-7.37V4.33H8.2a1.63 1.63 0 0 1 0 3.25zM10.15 19c2.97 0 5.5-2.52 5.5-5.5a5.6 5.6 0 0 0-2.13-4.3c.73-.92 1.2-2.1 1.2-3.37 0-3-2.55-5.58-5.55-5.58H.9V19zm8.07-9.35a9.35 9.35 0 1 0 18.72 0 9.4 9.4 0 0 0-9.37-9.4 9.38 9.38 0 0 0-9.35 9.4zm13.83-.02c0 2.45-2 4.47-4.48 4.47a4.48 4.48 0 0 1 0-8.95c2.48 0 4.48 2 4.48 4.48zM44.8.25h-4.95V11.6c0 4.13 3.27 7.4 7.4 7.4 4.07 0 7.4-3.27 7.4-7.4V.25H49.7v11.28a2.45 2.45 0 0 1-4.9 0zM74.2 19V.25h-4.93V9.1L60.4.25h-2V19h4.92v-8.87L72.17 19zM92.25 2.98a9.38 9.38 0 1 0 .05 13.25l-3.5-3.45a4.3 4.3 0 0 1-3.15 1.25 4.25 4.25 0 0 1-4.4-4.4c0-2.55 1.85-4.4 4.4-4.4a4.4 4.4 0 0 1 3.15 1.22zM112.72.25h-5.67l-3.63 6.25-3.6-6.25h-5.67L101 12.1V19h4.87v-6.9z"/><path fill="#323a45" d="M5.82 14.95V11.7h3.3c.85 0 1.63.73 1.63 1.63 0 .9-.73 1.62-1.63 1.62zm0-7.37V4.33H8.2a1.63 1.63 0 0 1 0 3.25zM10.15 19c2.97 0 5.5-2.52 5.5-5.5a5.6 5.6 0 0 0-2.13-4.3c.73-.92 1.2-2.1 1.2-3.37 0-3-2.55-5.58-5.55-5.58H.9V19zm8.07-9.35a9.35 9.35 0 1 0 18.72 0 9.4 9.4 0 0 0-9.37-9.4 9.38 9.38 0 0 0-9.35 9.4zm13.83-.02c0 2.45-2 4.47-4.48 4.47a4.48 4.48 0 0 1 0-8.95c2.48 0 4.48 2 4.48 4.48zM44.8.25h-4.95V11.6c0 4.13 3.27 7.4 7.4 7.4 4.07 0 7.4-3.27 7.4-7.4V.25H49.7v11.28a2.45 2.45 0 0 1-4.9 0zM74.2 19V.25h-4.93V9.1L60.4.25h-2V19h4.92v-8.87L72.17 19zM92.25 2.98a9.38 9.38 0 1 0 .05 13.25l-3.5-3.45a4.3 4.3 0 0 1-3.15 1.25 4.25 4.25 0 0 1-4.4-4.4c0-2.55 1.85-4.4 4.4-4.4a4.4 4.4 0 0 1 3.15 1.22zM112.72.25h-5.67l-3.63 6.25-3.6-6.25h-5.67L101 12.1V19h4.87v-6.9z"/></svg>
-  <br>
-  <span class="footer__copyright">Copyright 2015. All rights Reserved</span>
-  <div class="social-media">
-    <a href="" class="social-media__link social-media__link--fb"><i class="social-media__ico fa fa-facebook" aria-hidden="true"></i></a>
-    <a href="" class="social-media__link social-media__link--twit"><i class="social-media__ico fa fa-twitter" aria-hidden="true"></i></a>
-    <a href="" class="social-media__link social-media__link--linkin"><i class="social-media__ico fa fa-linkedin" aria-hidden="true"></i></a>
-    <a href="" class="social-media__link social-media__link--insta"><i class="social-media__ico fa fa-instagram" aria-hidden="true"></i></a>
-    <a href="" class="social-media__link social-media__link--vimeo"><i class="social-media__ico fa fa-vimeo" aria-hidden="true"></i></a>
-  </div>
-</footer>
+    </footer>
 
-<div id="toTop"><img src="img/arrow-up.png" alt=""></div>
+    <div id="toTop"><img src="img/arrow-up.png" alt=""></div>
 
-  <script src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
-  <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
-  <script type="text/javascript" src="https://unpkg.com/masonry-layout@4.2.0/dist/masonry.pkgd.min.js">
-  </script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.js"></script>
-  <script type="text/javascript" src="scripts/slick.min.js"></script>
-  <script type="text/javascript" src="scripts/main.js"></script>
+    <script src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/masonry-layout@4.2.0/dist/masonry.pkgd.min.js">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.js"></script>
+    <script type="text/javascript" src="scripts/slick.min.js"></script>
+    <script type="text/javascript" src="scripts/main.js"></script>
 </body>
+
 </html>
