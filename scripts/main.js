@@ -1,12 +1,4 @@
-
-// //  fixed header
-//
-  // $(window).scroll(function() {
-  //                 var top = $(document).scrollTop();
-  //                 if (top < 300) $(".nav-block").css({top: '0', position: 'relative'});
-  //                 else $(".nav-block").css({top: '0px', position: 'fixed', 'background-color': 'black'});
-  //             });
-//SMOOTH
+//smooth scroll
 
 $('a[href*="#"]')
     .not('[href="#"]')
@@ -36,7 +28,45 @@ $('a[href*="#"]')
         }
     });
 
+    //back to tops
 
+    $(function() {
+        $(window).scroll(function() {
+            if ($(this).scrollTop() != 0) {
+                $('#toTop').fadeIn();
+            } else {
+                $('#toTop').fadeOut();
+            }
+        });
+        $('#toTop').click(function() {
+            $('body,html').animate({
+                scrollTop: 0
+            }, 800);
+        });
+    });
+
+
+
+    //buttons
+
+    $(function() {
+        $(".portfolio-buttons button").click(function() {
+            $(".portfolio-buttons button").removeClass("portfolio-buttons__item--active");
+            $(this).toggleClass("portfolio-buttons__item--active");
+        })
+    });
+
+
+
+    //social-media
+    $('.social-media__container').hover(
+           function(){
+             $(this).addClass('fa-2x').css('transition', 'all .1s ease-in')
+           },
+           function() {
+             $(this).removeClass('fa-2x')
+           }
+    );
 
 //ISOTOPE
 
@@ -186,39 +216,21 @@ function initMap() {
         }]
     });
     bouncyMarker.setMap(map);
-
-    //
-    // var marker = new google.maps.Marker({
-    //     position: pos,
-    //     map: map
-    // });
 }
 google.maps.event.addDomListener(window, 'load', initMap);
 
-//back to tops
-
-$(function() {
-    $(window).scroll(function() {
-        if ($(this).scrollTop() != 0) {
-            $('#toTop').fadeIn();
-        } else {
-            $('#toTop').fadeOut();
-        }
-    });
-    $('#toTop').click(function() {
-        $('body,html').animate({
-            scrollTop: 0
-        }, 800);
-    });
-});
 
 
+//
+// this.$sm = $('.social-media__container');
+// this.$sm.hover(
+//       function(){
+//         $('.social-media__icobgr').addClass('fa-hover')},
+//       function() {
+//         $('.social-media__icobgr').removeClass('fa-hover')}
 
-//buttons
 
-$(function() {
-    $(".portfolio-buttons button").click(function() {
-        $(".portfolio-buttons button").removeClass("portfolio-buttons__item--active");
-        $(this).toggleClass("portfolio-buttons__item--active");
-    })
-});
+    // },
+    // function(){
+    //     $('.social-media__icobgr').css('background-color','#FFF');
+    // }

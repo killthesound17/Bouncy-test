@@ -68,27 +68,15 @@ line-height: 20px;
 text-transform: uppercase;
   }
 }
-.slick-dots {
-  background-color: #fff;
-  padding-bottom: 50px;
+
+.slick-dots li button:before
+{
+font-size: 14px;
+color: rgba(17, 190, 155, 0.5);
 }
-.slick-dots li.slick-active button:before {
-  position: absolute;
-    top: 0;
-    left: 0;
-    content: "";
-    width: 20px;
-    height: 20px;
-    font-family: "slick";
-    font-size: 14px;
-    line-height: 20px;
-    text-align: center;
-    color: black;
-    opacity: 0.25;
-    -webkit-font-smoothing: antialiased;
-
+.slick-dots li.slick-active button:before
+{
+  opacity: 1;
+      font-size: 14px;
+      color: #11be9b;
 }
-
-.slick-dots li button:before {
-
-  }
