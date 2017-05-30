@@ -1,43 +1,72 @@
-$(document).ready(function () {
-
-//SMOOTH
+//smooth scroll
 
 $('a[href*="#"]')
-    // Remove links that don't actually link to anything
     .not('[href="#"]')
     .not('[href="#0"]')
     .click(function(event) {
-        // On-page links
         if (
             location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') &&
             location.hostname == this.hostname
         ) {
-            // Figure out element to scroll to
             var target = $(this.hash);
             target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-            // Does a scroll target exist?
             if (target.length) {
-                // Only prevent default if animation is actually gonna happen
                 event.preventDefault();
                 $('html, body').animate({
                     scrollTop: target.offset().top
                 }, 1000, function() {
-                    // Callback after animation
-                    // Must change focus!
                     var $target = $(target);
                     $target.focus();
-                    if ($target.is(":focus")) { // Checking if the target was focused
+                    if ($target.is(":focus")) {
                         return false;
                     } else {
-                        $target.attr('tabindex', '-1'); // Adding tabindex for elements not focusable
-                        $target.focus(); // Set focus again
+                        $target.attr('tabindex', '-1');
+                        $target.focus();
                     };
                 });
             }
         }
     });
 
+    //back to tops
 
+    $(function() {
+        $(window).scroll(function() {
+            if ($(this).scrollTop() != 0) {
+                $('#toTop').fadeIn();
+            } else {
+                $('#toTop').fadeOut();
+            }
+        });
+        $('#toTop').click(function() {
+            $('body,html').animate({
+                scrollTop: 0
+            }, 800);
+        });
+    });
+
+
+
+    //buttons
+
+    $(function() {
+        $(".portfolio-buttons button").click(function() {
+            $(".portfolio-buttons button").removeClass("portfolio-buttons__item--active");
+            $(this).toggleClass("portfolio-buttons__item--active");
+        })
+    });
+
+
+
+    //social-media
+    $('.social-media__container').hover(
+           function(){
+             $(this).addClass('fa-2x').css('transition', 'all .1s ease-in')
+           },
+           function() {
+             $(this).removeClass('fa-2x')
+           }
+    );
 
 //ISOTOPE
 
@@ -85,6 +114,7 @@ function initMap() {
     };
 
     var map = new google.maps.Map(document.getElementById('map-main'), {
+        scrollwheel: false,
         zoom: 17,
         center: bouncyPos,
         mapTypeId: 'roadmap',
@@ -186,42 +216,21 @@ function initMap() {
         }]
     });
     bouncyMarker.setMap(map);
-
-    //
-    // var marker = new google.maps.Marker({
-    //     position: pos,
-    //     map: map
-    // });
 }
 google.maps.event.addDomListener(window, 'load', initMap);
 
-//back to tops
-
-$(function() {
-    $(window).scroll(function() {
-        if ($(this).scrollTop() != 0) {
-            $('#toTop').fadeIn();
-        } else {
-            $('#toTop').fadeOut();
-        }
-    });
-    $('#toTop').click(function() {
-        $('body,html').animate({
-            scrollTop: 0
-        }, 800);
-    });
-});
 
 
-
-//buttons
-
-$(function() {
-    $(".portfolio-buttons button").click(function() {
-        $(".portfolio-buttons button").removeClass("portfolio-buttons__item--active");
-        $(this).toggleClass("portfolio-buttons__item--active");
-    })
-});
+//
+// this.$sm = $('.social-media__container');
+// this.$sm.hover(
+//       function(){
+//         $('.social-media__icobgr').addClass('fa-hover')},
+//       function() {
+//         $('.social-media__icobgr').removeClass('fa-hover')}
 
 
-});
+    // },
+    // function(){
+    //     $('.social-media__icobgr').css('background-color','#FFF');
+    // }

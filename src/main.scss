@@ -1,14 +1,4 @@
-@font-face {
-    font-family: "slick"; /* Имя шрифта */
-    src: url('../styles/fonts/slick.ttf'); /* Путь к файлу со шрифтом */
-   }
-
-@import "slick";
-
-
-@import "slick-theme";
 @import "_header";
-
 @import "_portfolio";
 @import "_team";
 @import "_contactus-form";
@@ -18,21 +8,20 @@
 
 
 #toTop {
-  // width:100px;
-// border:1px solid #ccc;
-// background:#f7f7f7;
-// text-align:center;
-// padding:5px;
 position:fixed;
 bottom:50px; /* отступ кнопки от нижнего края страницы*/
 right:50px;
 cursor:pointer;
 display:none;
-// color:#333;
-// font-family:verdana;
-// font-size:11px;
 }
 
 *:focus {
 outline: none;
+}
+
+.fa-hover {
+  color: #11be9b !important;
+}
+button,a {
+  cursor: pointer;
 }
