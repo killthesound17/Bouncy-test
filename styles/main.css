@@ -284,6 +284,11 @@
     line-height: 20px;
     text-transform: uppercase; }
 
+.slick-dots {
+  padding-bottom: 60px;
+  background-color: #fff;
+  bottom: -70px; }
+
 .slick-dots li button:before {
   font-size: 14px;
   color: rgba(17, 190, 155, 0.5); }
@@ -335,13 +340,15 @@
     margin-bottom: 25px; }
 
 .social-media {
-  width: 20%;
+  width: 15%;
   margin: 0 auto;
   display: flex;
   flex-direction: row;
   justify-content: space-between; }
   .social-media__link {
     text-decoration: none; }
+  .social-media__container {
+    font-size: 1.1em; }
   .social-media__ico {
     font-size: 72px; }
   .social-media__icobgr--fb {
@@ -371,5 +378,8 @@
 
 button, a {
   cursor: pointer; }
+
+.container.portfolio {
+  text-align: center; }
 
 /*# sourceMappingURL=main.css.map */
