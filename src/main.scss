@@ -1,19 +1,18 @@
 @import "_header";
+@import "_header-upper";
+@import "_header-lower";
 @import "_portfolio";
+@import "_portfolio-buttons";
+@import "_portfolio-grid";
 @import "_team";
+@import "_team-slider";
 @import "_contactus-form";
 @import "_testimonials";
+@import "_test-slider";
 @import "_contact-with-map";
 @import "_footer.scss";
-
-
-#toTop {
-position:fixed;
-bottom:50px; /* отступ кнопки от нижнего края страницы*/
-right:50px;
-cursor:pointer;
-display:none;
-}
+@import "_sm-block";
+@import "_back-to-top";
 
 *:focus {
 outline: none;

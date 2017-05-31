@@ -1,0 +1,38 @@
+.social-media {
+    width: 15%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    &__link {
+        text-decoration: none;
+    }
+    &__container {
+    }
+    &__ico {
+      font-size: 72px;
+    }
+
+    &__icobgr {
+        &--fb {
+            color: #3b5998;
+        }
+
+        &--twit {
+            color: #26a6d1;
+        }
+
+        &--linkin {
+            color: #0e76a8;
+        }
+
+        &--insta {
+            color: #3f729b;
+        }
+
+        &--vimeo {
+            color: #86c9ef;
+        }
+    }
+}

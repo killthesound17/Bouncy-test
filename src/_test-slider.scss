@@ -1,0 +1,47 @@
+.test-slider {
+    background-color: #fff;
+}
+
+.test-slide {
+    display: flex !important;
+    padding: 50px 100px;
+    box-sizing: border-box;
+
+    &__pic {
+        width: 169px;
+        height: 169px;
+    }
+
+    &__info {
+        text-align: left;
+        width: 70%;
+        padding-left: 75px;
+    }
+
+    &__text {
+        color: #81868e;
+        font-family: "Open Sans";
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 28px;
+    }
+
+    &__heading {
+        color: #19bd9a;
+        font-family: "Open Sans";
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 20px;
+        text-transform: uppercase;
+        margin-bottom: 0;
+    }
+
+    &__heading2 {
+        color: #464646;
+        font-family: "Open Sans";
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+        text-transform: uppercase;
+    }
+}

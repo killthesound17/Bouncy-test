@@ -245,8 +245,21 @@
     font-weight: 400;
     line-height: 25px;
     width: 30%;
-    margin: 0 auto;
-    margin-bottom: 60px; }
+    margin: 0 auto 60px; }
+
+.slick-dots {
+  padding-bottom: 60px;
+  background-color: #fff;
+  bottom: -70px; }
+
+.slick-dots li button:before {
+  font-size: 14px;
+  color: rgba(17, 190, 155, 0.5); }
+
+.slick-dots li.slick-active button:before {
+  opacity: 1;
+  font-size: 14px;
+  color: #11be9b; }
 
 .test-slider {
   background-color: #fff; }
@@ -283,20 +296,6 @@
     font-weight: 400;
     line-height: 20px;
     text-transform: uppercase; }
-
-.slick-dots {
-  padding-bottom: 60px;
-  background-color: #fff;
-  bottom: -70px; }
-
-.slick-dots li button:before {
-  font-size: 14px;
-  color: rgba(17, 190, 155, 0.5); }
-
-.slick-dots li.slick-active button:before {
-  opacity: 1;
-  font-size: 14px;
-  color: #11be9b; }
 
 .contact-map {
   text-align: center; }
@@ -360,7 +359,7 @@
   .social-media__icobgr--vimeo {
     color: #86c9ef; }
 
-#toTop {
+#backToTop {
   position: fixed;
   bottom: 50px;
   /* ╨╛╤В╤Б╤В╤Г╨┐ ╨║╨╜╨╛╨┐╨║╨╕ ╨╛╤В ╨╜╨╕╨╢╨╜╨╡╨│╨╛ ╨║╤А╨░╤П ╤Б╤В╤А╨░╨╜╨╕╤Ж╤Л*/

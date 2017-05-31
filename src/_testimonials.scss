@@ -1,86 +1,46 @@
 .testimonials {
-  text-align: center;
-  background-color: #f3f3f3;
-  padding-bottom: 80px;
-  &__heading {
-    color: #333b46;
-    font-family: "Source Sans Pro";
-    font-size: 20px;
-    font-weight: 300;
-    line-height: 12px;
-    text-transform: uppercase;
-    padding-top: 80px;
-    padding-bottom: 40px;
+    text-align: center;
+    background-color: #f3f3f3;
+    padding-bottom: 80px;
+
+    &__heading {
+        color: #333b46;
+        font-family: "Source Sans Pro";
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 12px;
+        text-transform: uppercase;
+        padding-top: 80px;
+        padding-bottom: 40px;
         margin-top: 0;
-  }
-  &__text {
-    color: #81868e;
-    font-family: "Open Sans";
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 25px;
+    }
+
+    &__text {
+        color: #81868e;
+        font-family: "Open Sans";
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 25px;
         width: 30%;
-        margin: 0 auto;
-
-    margin-bottom: 60px;
-  }
+        margin: 0 auto 60px;
+    }
 }
 
-.test-slider {
-background-color: #fff;
-}
 
-.test-slide {
-  display: flex !important;
-  padding: 50px 100px;
-  box-sizing: border-box;
-  &__pic {
-width: 169px;
-height: 169px;
-  }
-  &__info {
-    text-align: left;
-width: 70%;
-padding-left: 75px;
-  }
-  &__text {
-    color: #81868e;
-font-family: "Open Sans";
-font-size: 16px;
-font-weight: 400;
-line-height: 28px;
-  }
-  &__heading {
-    color: #19bd9a;
-font-family: "Open Sans";
-font-size: 16px;
-font-weight: 700;
-line-height: 20px;
-text-transform: uppercase;
-margin-bottom: 0;
-  }
-  &__heading2 {
-    color: #464646;
-font-family: "Open Sans";
-font-size: 14px;
-font-weight: 400;
-line-height: 20px;
-text-transform: uppercase;
-  }
-}
+
 .slick-dots {
-      padding-bottom: 60px;
-      background-color: #fff;
-      bottom: -70px;
+    padding-bottom: 60px;
+    background-color: #fff;
+    bottom: -70px;
 }
-.slick-dots li button:before
-{
-font-size: 14px;
-color: rgba(17, 190, 155, 0.5);
+
+.slick-dots li button:before {
+    font-size: 14px;
+    color: rgba(17, 190, 155, 0.5);
 }
-.slick-dots li.slick-active button:before
-{
-  opacity: 1;
-      font-size: 14px;
-      color: #11be9b;
+
+.slick-dots li.slick-active button:before {
+    opacity: 1;
+    font-size: 14px;
+    color: #11be9b;
 }
