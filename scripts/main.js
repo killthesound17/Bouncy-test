@@ -33,12 +33,12 @@ $('a[href*="#"]')
     $(function() {
         $(window).scroll(function() {
             if ($(this).scrollTop() != 0) {
-                $('#toTop').fadeIn();
+                $('#backToTop').fadeIn();
             } else {
-                $('#toTop').fadeOut();
+                $('#backToTop').fadeOut();
             }
         });
-        $('#toTop').click(function() {
+        $('#backToTop').click(function() {
             $('body,html').animate({
                 scrollTop: 0
             }, 800);

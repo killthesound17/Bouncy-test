@@ -11,7 +11,6 @@
         padding-top: 80px;
         padding-bottom: 40px;
     }
-
     &__text {
         width: 40%;
         margin: 0 auto;
@@ -22,57 +21,5 @@
         font-weight: 400;
         line-height: 25px;
         margin-bottom: 60px;
-    }
-}
-
-.slider {}
-
-.slide {
-      margin-bottom: 40px;
-    box-sizing: border-box;
-    display: flex !important;
-    justify-content: space-between;
-
-    &__photo {
-        width: 49%;
-        margin-left: 40px;
-    }
-
-    &__info {
-        width: 40%;
-        text-align: right;
-    }
-
-    &__heading {
-        color: #464646;
-        font-family: "Open Sans";
-        font-size: 20px;
-        font-weight: 400;
-        line-height: 25px;
-            margin: 0;
-            margin-top: 20px;
-            padding-right: 40px;
-                border-right: 3px solid #11be9b;
-    }
-
-    &__heading2 {
-        color: #81868e;
-        font-family: "Source Sans Pro";
-        font-size: 14px;
-        font-weight: 300;
-        font-style: italic;
-        line-height: 25px;
-        text-transform: uppercase;
-        padding-right: 40px;
-
-    }
-
-    &__text {
-        color: #81868e;
-        font-family: "Open Sans";
-        font-size: 14px;
-        font-weight: 400;
-        line-height: 25px;
-        padding-right: 40px;
     }
 }
